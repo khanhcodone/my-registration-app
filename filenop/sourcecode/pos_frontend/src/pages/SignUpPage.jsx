@@ -18,11 +18,9 @@ const SignUpPage = () => {
    } = useForm();
 
    // 2. Cấu hình API (Gọi sang Backend NestJS)
-   const API_URL = "https://my-backend-api-1mvw.onrender.com      ";
-
    const mutation = useMutation({
       mutationFn: (newUser) => {
-         return axios.post(`${API_URL}/users/register`, newUser);
+         return axios.post("http://localhost:3000/users/register", newUser);
       },
       onSuccess: () => {
          alert("✅ Đăng ký thành công! Đăng nhập ngay nhé.");
