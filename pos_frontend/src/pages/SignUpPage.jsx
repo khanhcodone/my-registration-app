@@ -18,7 +18,7 @@ const SignUpPage = () => {
    } = useForm();
 
    // 2. Cấu hình API (Gọi sang Backend NestJS)
-   const API_URL = "https://my-backend-api-1mvw.onrender.com      ";
+   const API_URL = "https://my-backend-api-1mvw.onrender.com";
 
    const mutation = useMutation({
       mutationFn: (newUser) => {
